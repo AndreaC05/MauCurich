@@ -19,12 +19,12 @@ export default function HomePage() {
           <p>&quot;Regala Arte, Regala Amor&quot;</p>
           <p className="autor">- Mau Curich</p>
         </div>
-        <hr className="divider"/>
+        <hr className="divider" />
         <div className="des_aut flex justify-content-center align-items-center">
           <div className="img">
             <img src={des} alt="" />
           </div>
-          <div className="tex w-4">
+          <div className="tex">
             <p>
               Artista plástica en la mencion de dibujo y pintura, egresada de la
               escuela de formación artística Victor Morey Peña. <br />{" "}
@@ -33,38 +33,36 @@ export default function HomePage() {
             </p>
           </div>
         </div>
-        <hr className="divider"/>
+        <hr className="divider" />
         <div className="explorar">
           <h1>Explorar Trabajos</h1>
           <div className="images-t flex flex-column justify-content-center align-items-center">
-            <div className="flex img1 mt-5">
+            <div className="flex flex-wrap justify-content-center align-items-center img1 mt-5">
               <div>
                 <Image src={bn4} alt="" preview />
               </div>
               <div>
-              <Image src={c9} alt="" preview />
-                
+                <Image src={c9} alt="" preview />
               </div>
               <div>
-              <Image src={c2} alt="" preview />
-                
+                <Image src={c2} alt="" preview />
               </div>
             </div>
-            <div className="flex img2 mt-5">
+            <div className="flex flex-wrap justify-content-center align-items-center img2 mt-5">
               <div>
                 <Image src={c5} alt="" preview />
               </div>
               <div>
-              <Image src={c4} alt="" preview />
+                <Image src={c4} alt="" preview />
               </div>
               <div>
-              <Image src={bn14} alt="" preview />
+                <Image src={bn14} alt="" preview />
               </div>
             </div>
           </div>
         </div>
-        <hr className="divider"/>
-        <Footer/>
+        <hr className="divider" />
+        <Footer />
       </div>
     </>
   );

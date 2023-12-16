@@ -33,6 +33,7 @@
     font-size: 32px;
     margin-left: 50px;
     font-weight: 400;
+    width: 40%;
 }
 
 .explorar h1 {
@@ -49,4 +50,29 @@
 
 .images-t .img2 img {
     margin: 0px 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .des_aut {
+        flex-direction: column;
+    }
+    .tex {
+        width: 80% !important;
+        /* border: 1px solid #000; */
+        margin: 20px 0 0 0;
+    }
+    .images-t .img1, .images-t .img2 {
+        text-align: center;
+    }
+    .images-t .img1 img, .images-t .img2 img {
+        width: 80%;
+    }
+
+    .img {
+        text-align: center;
+    }
+
+    .img img {
+        width: 80%;
+    }
 }
