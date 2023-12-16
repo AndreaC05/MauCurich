@@ -33,7 +33,7 @@ export default function Navbar() {
                 
               </li>
             </ul>
-            <Link className="shop" to="/contact"><p>Shop</p></Link>
+            <Link className="shop" to="/contact"><p>Contact</p></Link>
               
           </div>
           <Button
