@@ -5,7 +5,9 @@ export default function Galery() {
     return(
         <>
         <Navbar/>
-        <h1>you</h1>
+        <div className="container_galeria">
+            
+        </div>
         <Footer/>
         </>
     );
