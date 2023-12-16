@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <>
       <footer className="flex justify-content-between align-items-center">
-        <div>
+        <div className="icons">
           <a
             href="https://www.facebook.com/profile.php?id=100064363556502&locale=es_LA"
             target="_blank"

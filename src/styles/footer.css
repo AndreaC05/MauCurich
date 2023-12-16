@@ -12,6 +12,9 @@ footer p {
 }
 
 @media screen and (max-width: 620px) {
+  footer {
+    flex-direction: column;
+  }
   .icons {
     width: 100%;
     text-align: center;

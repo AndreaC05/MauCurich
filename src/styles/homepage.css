@@ -32,8 +32,9 @@
     text-align: justify;
     font-size: 32px;
     margin-left: 50px;
-    font-weight: 400;
+    font-weight: 300;
     width: 40%;
+    line-height: 50px;
 }
 
 .explorar h1 {
@@ -50,6 +51,11 @@
 
 .images-t .img2 img {
     margin: 0px 30px;
+}
+
+.img img {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 @media screen and (max-width: 1024px) {

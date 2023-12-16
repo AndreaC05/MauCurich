@@ -1,14 +1,14 @@
+import { Image } from "primereact/image";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import des from "../assets/images/desaut.png";
-import "../styles/homepage.css";
 import bn4 from "../assets/images/bn4.png";
 import c4 from "../assets/images/c4.png";
 import bn14 from "../assets/images/bn14.png";
 import c5 from "../assets/images/c5.png";
 import c9 from "../assets/images/c9.png";
 import c2 from "../assets/images/c2.png";
-import { Image } from "primereact/image";
+import "../styles/homepage.css";
 
 export default function HomePage() {
   return (
