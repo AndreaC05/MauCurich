@@ -1,12 +1,17 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Sidebar } from "primereact/sidebar";
+import { Button } from "primereact/button";
 import banner from "../assets/images/banner.png";
-import "../styles/navbar.css";
 import facebook from "../assets/svg/facebook.svg";
 import instagram from "../assets/svg/instagram.svg";
 import whatsapp from "../assets/svg/whatsapp.svg";
 import tiktok from "../assets/svg/tiktok.svg";
 import correo from "../assets/svg/correo.svg";
+import "../styles/navbar.css";
+
 export default function Navbar() {
+  const [visibleRight, setVisibleRight] = useState(false);
   return (
     <>
       <nav>
@@ -32,6 +37,34 @@ export default function Navbar() {
               <p>Shop</p>
             </a>
           </div>
+          <Button
+            icon="pi pi-arrow-left"
+            className="sidebar"
+            onClick={() => setVisibleRight(true)}
+          />
+          <Sidebar
+            visible={visibleRight}
+            position="right"
+            onHide={() => setVisibleRight(false)}
+          >
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/artista">Artista</Link>
+              </li>
+              <li>
+                <Link to="/galery">Galery</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>
+            </ul>
+            <a href="">
+              <p>Shop</p>
+            </a>
+          </Sidebar>
           <div className="title-banner">
             <hr />
             <p>
