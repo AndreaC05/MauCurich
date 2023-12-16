@@ -30,12 +30,11 @@ export default function Navbar() {
                 <Link to="/galery">Galery</Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                
               </li>
             </ul>
-            <a href="" className="shop">
-              <p>Shop</p>
-            </a>
+            <Link className="shop" to="/contact"><p>Shop</p></Link>
+              
           </div>
           <Button
             icon="pi pi-arrow-left"
@@ -61,9 +60,6 @@ export default function Navbar() {
                 <Link to="/contact">Contact</Link>
               </li>
             </ul>
-            <a href="">
-              <p>Shop</p>
-            </a>
           </Sidebar>
           <div className="title-banner">
             <hr />
