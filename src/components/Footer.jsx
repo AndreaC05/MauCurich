@@ -8,15 +8,15 @@ import "../styles/footer.css"
 export default function Footer() {
   return (
     <>
-      <footer className="flex justify-content-between align-items-center">
-        <div>
+      <footer className="flex flex-wrap justify-content-between align-items-center">
+        <div className="icons">
           <img src={facebook} alt="" className="mr-4 "/>
           <img src={instagram} alt="" className="mr-4 "/>
           <img src={whatsapp} alt="" className="mr-4 "/>
           <img src={tiktok} alt="" className="mr-4 "/>
           <img src={correo} alt="" />
         </div>
-        <div>
+        <div className="textName">
           <p>@Mau Curich</p>
         </div>
       </footer>

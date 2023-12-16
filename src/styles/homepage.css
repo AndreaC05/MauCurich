@@ -76,3 +76,10 @@
         width: 80%;
     }
 }
+
+@media screen and (max-width: 460px) {
+    .frase {
+        /* border: 1px solid #000; */
+        text-align: center;
+    }
+}

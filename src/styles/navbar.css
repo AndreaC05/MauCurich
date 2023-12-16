@@ -210,3 +210,10 @@
     margin-bottom: 30px;
   }
 }
+
+@media screen and (max-width: 560px) {
+  .title-banner {
+    display: none;
+  }
+}
+
