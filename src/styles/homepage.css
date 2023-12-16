@@ -1,0 +1,52 @@
+.frase {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+    font-size: 36px;
+}
+
+.frase p {
+    font-weight: 400;
+}
+
+.frase .autor {
+    color: #FF8B03;
+    margin-top: 20px;
+}
+
+.divider {
+    border: none;
+    background: #D3D3D3;
+    height: 1px;
+    width: 88%;
+    margin: 70px auto 0px auto;
+} 
+
+.des_aut {
+    margin-top: 60px;
+}
+
+.tex {
+    text-align: justify;
+    font-size: 32px;
+    margin-left: 50px;
+    font-weight: 400;
+}
+
+.explorar h1 {
+    color: #FF8B03;
+    font-size: 64px;
+    margin-top: 50px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.images-t .img1 img{
+    margin: 0px 30px;
+}
+
+.images-t .img2 img {
+    margin: 0px 30px;
+}

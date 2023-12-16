@@ -1,0 +1,12 @@
+footer {
+  width: 88%;
+  margin: 30px auto;
+}
+
+footer p {
+  font-size: 24px;
+  background: linear-gradient(180deg, #ff8b03 0%, #f8df00 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
