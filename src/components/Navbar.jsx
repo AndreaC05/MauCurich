@@ -47,19 +47,57 @@ export default function Navbar() {
             className="custom-sidebar"
           >
             <ul>
-              <li>
+              <li style={{ marginLeft: "120px" }}>
                 <Link to="/">Home</Link>
               </li>
-              <li>
+              <li style={{ marginLeft: "140px" }}>
                 <Link to="/artista">Artista</Link>
               </li>
-              <li>
+              <li style={{ marginLeft: "160px" }}>
                 <Link to="/galery">Galery</Link>
               </li>
-              <li>
+              <li style={{ marginLeft: "180px" }}>
                 <Link to="/contact">Contact</Link>
               </li>
             </ul>
+
+            <div className="sider-social flex">
+              <a
+                href="https://www.facebook.com/profile.php?id=100064363556502&locale=es_LA"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={facebook} alt="" />
+              </a>
+              <a
+                href="https://www.instagram.com/art_mau92/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={instagram} alt="" />
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=51940007944"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={whatsapp} alt="" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@mau.cristina"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={tiktok} alt="" />
+              </a>
+              <a
+                href="mailto:mau.art92@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={correo} alt="" />
+              </a>
+            </div>
           </Sidebar>
           <div className="title-banner">
             <hr />
