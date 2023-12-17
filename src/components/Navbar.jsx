@@ -45,6 +45,7 @@ export default function Navbar() {
             visible={visibleRight}
             position="right"
             onHide={() => setVisibleRight(false)}
+            className="si"
           >
             <ul>
               <li>
