@@ -176,6 +176,13 @@
   color: #f8df00;
 }
 
+.custom-sidebar {
+  position: relative;
+  width: 400px;
+  background-color: #fff;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+}
+
 @media screen and (max-width: 1250px) {
   .title-banner {
     bottom: 50px;
@@ -216,4 +223,3 @@
     display: none;
   }
 }
-

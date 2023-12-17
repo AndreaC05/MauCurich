@@ -29,12 +29,11 @@ export default function Navbar() {
               <li>
                 <Link to="/galery">Galery</Link>
               </li>
-              <li>
-                
-              </li>
+              <li></li>
             </ul>
-            <Link className="shop" to="/contact"><p>Contact</p></Link>
-              
+            <Link className="shop" to="/contact">
+              <p>Contact</p>
+            </Link>
           </div>
           <Button
             icon="pi pi-arrow-left"
@@ -45,6 +44,7 @@ export default function Navbar() {
             visible={visibleRight}
             position="right"
             onHide={() => setVisibleRight(false)}
+            className="custom-sidebar"
           >
             <ul>
               <li>
@@ -76,11 +76,41 @@ export default function Navbar() {
               <span>H</span>
             </p>
             <div className="social_icons">
-              <a href="https://www.facebook.com/profile.php?id=100064363556502&locale=es_LA" target="_blank" rel="noreferrer"><img src={facebook} alt=""/></a>
-              <a href="https://www.instagram.com/art_mau92/" target="_blank" rel="noreferrer"><img src={instagram} alt="" /></a>
-              <a href="https://api.whatsapp.com/send?phone=51940007944" target="_blank" rel="noreferrer"><img src={whatsapp} alt="" /></a>
-              <a href="https://www.tiktok.com/@mau.cristina" target="_blank" rel="noreferrer"><img src={tiktok} alt="" /></a>
-              <a href="mailto:mau.art92@gmail.com" target="_blank" rel="noreferrer"><img src={correo} alt="" /></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100064363556502&locale=es_LA"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={facebook} alt="" />
+              </a>
+              <a
+                href="https://www.instagram.com/art_mau92/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={instagram} alt="" />
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=51940007944"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={whatsapp} alt="" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@mau.cristina"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={tiktok} alt="" />
+              </a>
+              <a
+                href="mailto:mau.art92@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={correo} alt="" />
+              </a>
             </div>
           </div>
         </div>
