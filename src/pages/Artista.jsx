@@ -35,6 +35,8 @@ export default function Artista() {
           <Image src={img8} alt="autor-image" preview className="img8" />
         </div>
       </div>
+
+      <hr className="divider"/>
       <Footer />
     </>
   );
