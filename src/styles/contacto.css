@@ -42,7 +42,22 @@
 }
 
 .contenedor_principal {
-    width: 100%;
     /* border: 1px solid #000; */
     margin-left: 90px;
+}
+
+/* Formulario */
+.container-form {
+    position: relative;
+}
+
+.container-form img {
+    margin-top: 130px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form {
+    position: absolute;
 }

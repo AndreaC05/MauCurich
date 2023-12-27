@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Contacto from "../components/Contacto";
+import splash from "../assets/splash.svg";
 import "../styles/contacto.css";
 
 export default function Contact() {
@@ -41,7 +42,14 @@ export default function Contact() {
         </div>
       </div>
 
-      <hr className="divider"/>
+      <div className="container-form">
+        <img src={splash} alt="" />
+        <div className="form">
+            <h1></h1>
+        </div>
+      </div>
+
+      <hr className="divider" />
       <Footer />
     </>
   );
