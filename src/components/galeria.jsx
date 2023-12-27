@@ -147,21 +147,21 @@ export default function galeria() {
                 <div className="fila 1">
                   <Image src={c1} alt="img" preview />
                   <p>20cm X 25cm</p>
-                  <p>Grafito 1 rostro</p>
+                  <p>Acrílico</p>
                   <p>Color 1 rostro : Consultar</p>
                 </div>
 
                 <div className="fila 1">
                   <Image src={c2} alt="img" preview />
                   <p>20cm X 25cm</p>
-                  <p>Grafito 1 rostro</p>
+                  <p>Acrílico</p>
                   <p>Color 1 rostro : Consultar</p>
                 </div>
 
                 <div className="fila 1">
                   <Image src={c4} alt="img" preview />
                   <p>20cm X 20cm</p>
-                  <p>Grafito 1 rostro</p>
+                  <p>Acrílico</p>
                   <p>Color 1 rostro : Consultar</p>
                 </div>
               </div>
@@ -170,21 +170,21 @@ export default function galeria() {
                 <div className="fila 2">
                   <Image src={c5} alt="img" preview />
                   <p>50cm X 60cm</p>
-                  <p>Grafito 1 rostro</p>
+                  <p>Acrílico</p>
                   <p>Color 1 rostro : Consultar</p>
                 </div>
 
                 <div className="fila 2">
                   <Image src={c6} alt="img" preview />
                   <p>20cm X 20cm</p>
-                  <p>Grafito 1 rostro</p>
+                  <p>Acrílico</p>
                   <p>Color 1 rostro : Consultar</p>
                 </div>
 
                 <div className="fila 2">
                   <Image src={c7} alt="img" preview />
                   <p>20cm X 20cm</p>
-                  <p>Grafito 1 rostro</p>
+                  <p>Acrílico</p>
                   <p>Color 1 rostro : Consultar</p>
                 </div>
               </div>
@@ -192,14 +192,14 @@ export default function galeria() {
                 <div className="fila 3">
                   <Image src={c9} alt="img" preview />
                   <p>20cm X 25cm</p>
-                  <p>Grafito 1 rostro</p>
+                  <p>Acrílico</p>
                   <p>Color 1 rostro : Consultar</p>
                 </div>
 
                 <div className="fila 3">
                   <Image src={c10} alt="img" preview />
                   <p>20cm X 20cm</p>
-                  <p>Grafito 1 rostro</p>
+                  <p>Acrílico</p>
                   <p>Color 1 rostro : Consultar</p>
                 </div>
               </div>
