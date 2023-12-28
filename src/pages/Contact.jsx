@@ -59,7 +59,6 @@ export default function Contact() {
             name="formContact"
             netlify
           >
-            <input type="hidden" name="formContact" value="formContact" />
             <div className="flex flex-wrap">
               <div className="form-group inputFloat">
                 <span className="p-float-label">
@@ -104,6 +103,9 @@ export default function Contact() {
                   onChange={(e) => setMensaje(e.target.value)}
                 ></textarea>
               </Fieldset>
+            </div>
+            <div className="form-group">
+              <input type="hidden" name="formContact" value="formContact" />
             </div>
             <div className="form-group">
               <input
