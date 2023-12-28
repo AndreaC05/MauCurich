@@ -31,6 +31,10 @@ export default function Contact() {
         }).toString(),
       });
       if (response.ok) {
+        setNombre("");
+        setApellido("");
+        setCorreo("");
+        setMensaje("");
         toast.current.show({
           severity: "success",
           summary: "Success",
