@@ -1,3 +1,7 @@
+import { useState } from "react";
+import { InputText } from "primereact/inputtext";
+import { InputTextarea } from "primereact/inputtextarea";
+import { Fieldset } from "primereact/fieldset";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Contacto from "../components/Contacto";
@@ -5,6 +9,10 @@ import splash from "../assets/splash.svg";
 import "../styles/contacto.css";
 
 export default function Contact() {
+  const [nombre, setNombre] = useState("");
+  const [apellido, setApellido] = useState("");
+  const [correo, setCorreo] = useState("");
+  const [mensaje, setMensaje] = useState("");
   return (
     <>
       <Navbar />
@@ -45,7 +53,51 @@ export default function Contact() {
       <div className="container-form">
         <img src={splash} alt="" className="image-splash" />
         <div className="form">
-          <h1></h1>
+          <form action="">
+            <div className="flex">
+              <div className="form-group">
+                <span className="p-float-label">
+                  <InputText
+                    id="nombre"
+                    value={nombre}
+                    onChange={(e) => setNombre(e.target.value)}
+                  />
+                  <label htmlFor="username">Nombre</label>
+                </span>
+              </div>
+              <div className="form-group">
+                <span className="p-float-label">
+                  <InputText
+                    id="apellido"
+                    value={apellido}
+                    onChange={(e) => setApellido(e.target.value)}
+                  />
+                  <label htmlFor="username">Apellido</label>
+                </span>
+              </div>
+            </div>
+            <div className="form-group">
+              <span className="p-float-label">
+                <InputText
+                  id="correo"
+                  value={correo}
+                  onChange={(e) => setCorreo(e.target.value)}
+                />
+                <label htmlFor="correo">Correo</label>
+              </span>
+            </div>
+            <div className="form-group">
+              <Fieldset legend="Mensaje*" className="messageBox">
+                <InputTextarea
+                  autoResize
+                  value={mensaje}
+                  onChange={(e) => setMensaje(e.target.value)}
+                  rows={8}
+                  cols={30}
+                />
+              </Fieldset>
+            </div>
+          </form>
         </div>
       </div>
 
