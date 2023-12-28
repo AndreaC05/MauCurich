@@ -32,8 +32,8 @@ export default function galeria() {
         <TabView className="tb_container">
           <TabPanel header="Retratos">
             <div className="galerys">
-              <div className="flex">
-                <div className=" fila 1">
+              <div className="flex flex-wrap">
+                <div className="fila 1">
                   <Image src={bn1} alt="img" preview />
                   <p>A4 (21cm X 29.7cm)</p>
                   <p>Grafito 1 rostro</p>
@@ -55,8 +55,8 @@ export default function galeria() {
                 </div>
               </div>
 
-              <div className="flex">
-                <div className=" fila 2">
+              <div className="flex flex-wrap">
+                <div className="fila 2">
                   <Image src={bn10} alt="img" preview />
                   <p>A3 (42cm X 29.7cm)</p>
                   <p>Grafito 1 rostro</p>
@@ -78,7 +78,7 @@ export default function galeria() {
                 </div>
               </div>
 
-              <div className="flex">
+              <div className="flex flex-wrap">
                 <div className=" fila 3">
                   <Image src={bn11} alt="img" preview />
                   <p>A4 (21cm X 29.7cm)</p>
@@ -101,7 +101,7 @@ export default function galeria() {
                 </div>
               </div>
 
-              <div className="flex">
+              <div className="flex flex-wrap">
                 <div className=" fila 4">
                   <Image src={bn17} alt="img" preview />
                   <p>A4 (21cm X 29.7cm)</p>
@@ -124,7 +124,7 @@ export default function galeria() {
                 </div>
               </div>
 
-              <div className="flex">
+              <div className="flex flex-wrap">
                 <div className=" fila 5">
                   <Image src={bn8} alt="img" preview />
                   <p>A4 (21cm X 29.7cm)</p>
@@ -143,7 +143,7 @@ export default function galeria() {
           </TabPanel>
           <TabPanel header="Pinturas">
             <div className="galerys">
-              <div className="flex">
+              <div className="flex flex-wrap">
                 <div className="fila 1">
                   <Image src={c1} alt="img" preview />
                   <p>20cm X 25cm</p>
@@ -166,7 +166,7 @@ export default function galeria() {
                 </div>
               </div>
 
-              <div className="flex">
+              <div className="flex flex-wrap">
                 <div className="fila 2">
                   <Image src={c5} alt="img" preview />
                   <p>50cm X 60cm</p>
@@ -188,7 +188,7 @@ export default function galeria() {
                   <p>Color 1 rostro : Consultar</p>
                 </div>
               </div>
-              <div className="flex">
+              <div className="flex flex-wrap">
                 <div className="fila 3">
                   <Image src={c9} alt="img" preview />
                   <p>20cm X 25cm</p>

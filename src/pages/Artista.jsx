@@ -18,7 +18,7 @@ export default function Artista() {
       <div className="container-artista text-center">
         <p>Maura Curichimba</p>
         <p>Artista digital</p>
-        <div className="container-collage-images1 flex justify-content-center align-items-center flex-wrap">
+        <div className="container-collage-images1 flex justify-content-center align-items-center">
           <Image src={img1} alt="autor-image" preview className="img1" />
           <Image src={img2} alt="autor-image" preview className="img2" />
         </div>
