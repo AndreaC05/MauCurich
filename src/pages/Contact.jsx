@@ -52,26 +52,28 @@ export default function Contact() {
       <div className="container-form">
         <img src={splash} alt="" className="image-splash" />
         <div className="form">
-          <form name="contacto" data-netlify="true">
+          <form action="" method="post" id="formContact" name="formContact" netlify>
             <div className="flex flex-wrap">
               <div className="form-group inputFloat">
                 <span className="p-float-label">
                   <InputText
                     id="nombre"
+                    name="nombre"
                     value={nombre}
                     onChange={(e) => setNombre(e.target.value)}
                   />
-                  <label htmlFor="username">Nombre*</label>
+                  <label htmlFor="nombre">Nombre*</label>
                 </span>
               </div>
               <div className="form-group inputFloat">
                 <span className="p-float-label">
                   <InputText
                     id="apellido"
+                    name="apellido"
                     value={apellido}
                     onChange={(e) => setApellido(e.target.value)}
                   />
-                  <label htmlFor="username">Apellido*</label>
+                  <label htmlFor="apellido">Apellido*</label>
                 </span>
               </div>
             </div>
@@ -79,6 +81,7 @@ export default function Contact() {
               <span className="p-float-label">
                 <InputText
                   id="correo"
+                  name="correo"
                   value={correo}
                   onChange={(e) => setCorreo(e.target.value)}
                 />
