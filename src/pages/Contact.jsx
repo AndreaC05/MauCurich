@@ -92,7 +92,6 @@ export default function Contact() {
           />
         </div>
       </div>
-
       <div className="container-form">
         <img src={splash} alt="" className="image-splash" />
         <div className="form">

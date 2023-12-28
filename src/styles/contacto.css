@@ -138,6 +138,14 @@
     margin-top: 25px;
 }
 
+.p-toast-message {
+    padding: 10px;
+}
+
+.p-toast-message-text {
+    margin-left: 20px;
+}
+
 @media screen and (max-width: 840px) {
     .container-principal {
         width: 80%;
