@@ -52,7 +52,14 @@ export default function Contact() {
       <div className="container-form">
         <img src={splash} alt="" className="image-splash" />
         <div className="form">
-          <form action="" method="post" id="formContact" name="formContact" netlify>
+          <form
+            action=""
+            method="post"
+            id="formContact"
+            name="formContact"
+            netlify
+          >
+            <input type="hidden" name="formContact" value="formContact" />
             <div className="flex flex-wrap">
               <div className="form-group inputFloat">
                 <span className="p-float-label">
@@ -99,7 +106,11 @@ export default function Contact() {
               </Fieldset>
             </div>
             <div className="form-group">
-              <input type="submit" value="Enviar mensaje" className="btnEnviar" />
+              <input
+                type="submit"
+                value="Enviar mensaje"
+                className="btnEnviar"
+              />
             </div>
           </form>
         </div>
