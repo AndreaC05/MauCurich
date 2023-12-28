@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { InputText } from "primereact/inputtext";
-import { InputTextarea } from "primereact/inputtextarea";
 import { Fieldset } from "primereact/fieldset";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -62,7 +61,7 @@ export default function Contact() {
                     value={nombre}
                     onChange={(e) => setNombre(e.target.value)}
                   />
-                  <label htmlFor="username">Nombre</label>
+                  <label htmlFor="username">Nombre*</label>
                 </span>
               </div>
               <div className="form-group">
@@ -72,7 +71,7 @@ export default function Contact() {
                     value={apellido}
                     onChange={(e) => setApellido(e.target.value)}
                   />
-                  <label htmlFor="username">Apellido</label>
+                  <label htmlFor="username">Apellido*</label>
                 </span>
               </div>
             </div>
@@ -83,17 +82,15 @@ export default function Contact() {
                   value={correo}
                   onChange={(e) => setCorreo(e.target.value)}
                 />
-                <label htmlFor="correo">Correo</label>
+                <label htmlFor="correo">Correo*</label>
               </span>
             </div>
             <div className="form-group">
               <Fieldset legend="Mensaje*" className="messageBox">
-                <InputTextarea
-                  autoResize
+                <InputText
+                  id="mensaje"
                   value={mensaje}
                   onChange={(e) => setMensaje(e.target.value)}
-                  rows={8}
-                  cols={30}
                 />
               </Fieldset>
             </div>
