@@ -51,6 +51,7 @@ export default function Contact() {
 
   return (
     <>
+      <Toast ref={toast} />
       <Navbar />
       <div className="contenedor_principal">
         <div className="div1">
