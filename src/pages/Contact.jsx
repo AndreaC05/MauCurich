@@ -13,10 +13,10 @@ export default function Contact() {
   const [correo, setCorreo] = useState("");
   const [mensaje, setMensaje] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = fetch("/", {
+      const response = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({
@@ -27,7 +27,11 @@ export default function Contact() {
           mensaje,
         }).toString(),
       });
-      console.log(response);
+      if (response.ok) {
+        alert("Formulario enviado exitosamente");
+      } else {
+        alert("Error al enviar el formulario");
+      }
     } catch (error) {
       console.error("Error:", error);
       alert("Error inesperado al enviar el formulario");
