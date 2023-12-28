@@ -19,7 +19,13 @@ export default function Contact() {
       const response = fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: JSON.stringify({}),
+        body: new URLSearchParams({
+          "form-name": e.target.getAttribute("name"), // Usa "name" en lugar de "nombre"
+          nombre,
+          apellido,
+          correo,
+          mensaje,
+        }).toString(),
       });
 
       if (response.ok) {
