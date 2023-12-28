@@ -143,3 +143,18 @@
     margin: 20px 0;
   }
 }
+
+@media screen and (max-width: 862px) {
+  .container-collage-images1 .p-image img,
+  .container-collage-images2 .p-image img,
+  .container-collage-images-3 .p-image img,
+  .container-collage-images-4 .p-image img {
+    width: 80%;
+  }
+  .container-artista p:nth-child(1) {
+    font-size: 30px;
+  }
+  .container-artista p:nth-child(2) {
+    font-size: 25px;
+  }
+}
