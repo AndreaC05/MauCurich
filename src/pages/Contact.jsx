@@ -24,6 +24,8 @@ export default function Contact() {
         headers: {
           "Content-Type": "application/json",
         },
+        body: JSON.stringify({
+        }),
       });
 
       if (response.ok) {
