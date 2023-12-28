@@ -52,7 +52,7 @@ export default function Contact() {
       <div className="container-form">
         <img src={splash} alt="" className="image-splash" />
         <div className="form">
-          <form action="">
+          <form action="" name="contacto" netlify method="POST">
             <div className="flex flex-wrap">
               <div className="form-group inputFloat">
                 <span className="p-float-label">
