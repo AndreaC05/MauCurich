@@ -53,8 +53,8 @@ export default function Contact() {
         <img src={splash} alt="" className="image-splash" />
         <div className="form">
           <form action="">
-            <div className="flex">
-              <div className="form-group">
+            <div className="flex flex-wrap">
+              <div className="form-group inputFloat">
                 <span className="p-float-label">
                   <InputText
                     id="nombre"
@@ -64,7 +64,7 @@ export default function Contact() {
                   <label htmlFor="username">Nombre*</label>
                 </span>
               </div>
-              <div className="form-group">
+              <div className="form-group inputFloat">
                 <span className="p-float-label">
                   <InputText
                     id="apellido"
