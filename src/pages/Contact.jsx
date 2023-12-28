@@ -1,7 +1,6 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { InputText } from "primereact/inputtext";
 import { Fieldset } from "primereact/fieldset";
-import { Toast } from "primereact/toast";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Contacto from "../components/Contacto";
@@ -9,51 +8,18 @@ import splash from "../assets/splash.svg";
 import "../styles/contacto.css";
 
 export default function Contact() {
-  const toast = useRef(null);
-
   const [nombre, setNombre] = useState("");
   const [apellido, setApellido] = useState("");
   const [correo, setCorreo] = useState("");
   const [mensaje, setMensaje] = useState("");
 
-  const handleSubmit = async (e) => {
+  const handleChange = (e) => {
     e.preventDefault();
-    try {
-      const response = await fetch("/.netlify/functions/formContact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-        }),
-      });
-
-      if (response.ok) {
-        toast.current.show({
-          severity: "success",
-          summary: "Success",
-          detail: "Mensaje enviado correctamente",
-        });
-      } else {
-        toast.current.show({
-          severity: "error",
-          summary: "Error",
-          detail: "Error al enviar el formulario.",
-        });
-      }
-    } catch (error) {
-      console.error("Error al enviar el formulario:", error);
-      toast.current.show({
-        severity: "error",
-        summary: "Error",
-        detail: "Parace que ocurrio un error inesperado.",
-      });
-    }
-  };
+    console.log("Formulario Enviado")
+  }
 
   return (
     <>
-      <Toast ref={toast} />
       <Navbar />
       <div className="contenedor_principal">
         <div className="div1">
@@ -93,7 +59,6 @@ export default function Contact() {
         <img src={splash} alt="" className="image-splash" />
         <div className="form">
           <form
-            onSubmit={(e) => handleSubmit(e)}
             method="post"
             id="formContact"
             name="formContact"
@@ -165,6 +130,7 @@ export default function Contact() {
                 type="submit"
                 value="Enviar mensaje"
                 className="btnEnviar"
+                onChange={handleChange}
               />
             </div>
           </form>
