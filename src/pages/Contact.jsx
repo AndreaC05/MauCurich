@@ -13,9 +13,32 @@ export default function Contact() {
   const [correo, setCorreo] = useState("");
   const [mensaje, setMensaje] = useState("");
 
-  const handleChange = (e) => {
+  const handleFormValidation = async(e) =>  {
     e.preventDefault();
-    console.log("Formulario Enviado")
+    const formData = {
+      nombre,
+      apellido,
+      correo,
+      mensaje,
+    };
+    try {
+      const response = await fetch('/.netlify/functions/formContact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert('Formulario enviado exitosamente');
+      } else {
+        alert('Error al enviar el formulario');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Error inesperado al enviar el formulario');
+    }
   }
 
   return (
@@ -64,6 +87,7 @@ export default function Contact() {
             name="formContact"
             netlify
             netlify-honeypot="bot-field"
+            onSubmit={handleFormValidation}
           >
             <div className="flex flex-wrap">
               <div className="form-group inputFloat">
@@ -130,7 +154,6 @@ export default function Contact() {
                 type="submit"
                 value="Enviar mensaje"
                 className="btnEnviar"
-                onChange={handleChange}
               />
             </div>
           </form>
