@@ -87,11 +87,12 @@ export default function Contact() {
             </div>
             <div className="form-group">
               <Fieldset legend="Mensaje*" className="messageBox">
-                <InputText
+                <textarea
+                  name="mensaje"
                   id="mensaje"
                   value={mensaje}
                   onChange={(e) => setMensaje(e.target.value)}
-                />
+                ></textarea>
               </Fieldset>
             </div>
           </form>
