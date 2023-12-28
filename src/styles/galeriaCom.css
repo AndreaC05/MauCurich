@@ -43,3 +43,13 @@
   font-weight: 400;
   margin-top: 10px;
 }
+
+@media screen and (max-width: 590px) {
+  .fila {
+    text-align: center;
+  }
+  .fila img {
+    width: 80%;
+    text-align: center;
+  }
+}
