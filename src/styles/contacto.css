@@ -124,6 +124,20 @@
     color: #6B6B6B;
 }
 
+.btnEnviar {
+    background: linear-gradient(180deg, #FF8B03 0%, #F8DF00 100%);
+    border: none !important;
+    width: 50% !important;
+    margin-bottom: 0 !important;
+    cursor: pointer;
+}
+
+.form-group:nth-child(4) {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
 @media screen and (max-width: 840px) {
     .container-principal {
         width: 80%;
@@ -170,5 +184,8 @@
     }
     .image-splash {
         display: none;
+    }
+    .btnEnviar {
+        width: 100% !important;
     }
 }

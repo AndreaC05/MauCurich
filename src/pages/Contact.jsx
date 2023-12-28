@@ -95,6 +95,9 @@ export default function Contact() {
                 ></textarea>
               </Fieldset>
             </div>
+            <div className="form-group">
+              <input type="submit" value="Enviar mensaje" className="btnEnviar" />
+            </div>
           </form>
         </div>
       </div>
