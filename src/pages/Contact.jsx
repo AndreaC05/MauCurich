@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { InputText } from "primereact/inputtext";
 import { Fieldset } from "primereact/fieldset";
+import { Toast } from "primereact/toast";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Contacto from "../components/Contacto";
@@ -8,6 +9,8 @@ import splash from "../assets/splash.svg";
 import "../styles/contacto.css";
 
 export default function Contact() {
+  const toast = useRef(null);
+
   const [nombre, setNombre] = useState("");
   const [apellido, setApellido] = useState("");
   const [correo, setCorreo] = useState("");
@@ -28,9 +31,19 @@ export default function Contact() {
         }).toString(),
       });
       if (response.ok) {
-        alert("Formulario enviado exitosamente");
+        toast.current.show({
+          severity: "success",
+          summary: "Success",
+          detail: "Formulario Enviado correctamente",
+          life: 3000,
+        });
       } else {
-        alert("Error al enviar el formulario");
+        toast.current.show({
+          severity: "error",
+          summary: "Error",
+          detail: "Algo salio mal al enviar el formulario",
+          life: 3000,
+        });
       }
     } catch (error) {
       console.error("Error:", error);
@@ -41,6 +54,7 @@ export default function Contact() {
   return (
     <>
       <Navbar />
+      <Toast ref={toast} />
       <div className="contenedor_principal">
         <div className="div1">
           <Contacto
