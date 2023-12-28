@@ -105,7 +105,15 @@ export default function Contact() {
               </Fieldset>
             </div>
             <div className="form-group">
-              <input type="hidden" name="formContact" value="formContact" />
+              <input type="hidden" name="form-name" value="formContact" />
+            </div>
+            <div className="form-group">
+              <p className="hidden">
+                <label>
+                  No llenes este campo si eres humano:{" "}
+                  <input name="bot-field" />
+                </label>
+              </p>
             </div>
             <div className="form-group">
               <input
