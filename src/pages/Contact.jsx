@@ -27,12 +27,7 @@ export default function Contact() {
           mensaje,
         }).toString(),
       });
-
-      if (response.ok) {
-        alert("Formulario enviado exitosamente");
-      } else {
-        alert("Error al enviar el formulario");
-      }
+      console.log(response);
     } catch (error) {
       console.error("Error:", error);
       alert("Error inesperado al enviar el formulario");
