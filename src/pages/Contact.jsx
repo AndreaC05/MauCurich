@@ -13,13 +13,24 @@ export default function Contact() {
   const [correo, setCorreo] = useState("");
   const [mensaje, setMensaje] = useState("");
 
-  const showToast = () => {
-    console.log("Formulario enviado exitosamente");
-  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    try {
+      const response = fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: JSON.stringify({}),
+      });
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    showToast();
+      if (response.ok) {
+        alert("Formulario enviado exitosamente");
+      } else {
+        alert("Error al enviar el formulario");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Error inesperado al enviar el formulario");
+    }
   };
 
   return (
@@ -63,6 +74,7 @@ export default function Contact() {
         <img src={splash} alt="" className="image-splash" />
         <div className="form">
           <form
+            action="/"
             method="post"
             id="formContact"
             name="formContact"
