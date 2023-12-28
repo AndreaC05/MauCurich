@@ -53,11 +53,12 @@ export default function Contact() {
         <img src={splash} alt="" className="image-splash" />
         <div className="form">
           <form
-            action=""
+            action="/contact"
             method="post"
             id="formContact"
             name="formContact"
             netlify
+            netlify-honeypot="bot-field"
           >
             <div className="flex flex-wrap">
               <div className="form-group inputFloat">
@@ -67,6 +68,7 @@ export default function Contact() {
                     name="nombre"
                     value={nombre}
                     onChange={(e) => setNombre(e.target.value)}
+                    required
                   />
                   <label htmlFor="nombre">Nombre*</label>
                 </span>
@@ -78,6 +80,7 @@ export default function Contact() {
                     name="apellido"
                     value={apellido}
                     onChange={(e) => setApellido(e.target.value)}
+                    required
                   />
                   <label htmlFor="apellido">Apellido*</label>
                 </span>
@@ -90,6 +93,7 @@ export default function Contact() {
                   name="correo"
                   value={correo}
                   onChange={(e) => setCorreo(e.target.value)}
+                  required
                 />
                 <label htmlFor="correo">Correo*</label>
               </span>
@@ -101,6 +105,7 @@ export default function Contact() {
                   id="mensaje"
                   value={mensaje}
                   onChange={(e) => setMensaje(e.target.value)}
+                  required
                 ></textarea>
               </Fieldset>
             </div>

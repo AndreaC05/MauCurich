@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,6 +7,53 @@
     <title>Mau Curich</title>
   </head>
   <body>
+    <form
+      id="formContact"
+      name="formContact"
+      netlify
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <div className="flex flex-wrap">
+        <div className="form-group inputFloat">
+          <span className="p-float-label">
+            <InputText id="nombre" name="nombre" />
+            <label htmlFor="nombre">Nombre*</label>
+          </span>
+        </div>
+        <div className="form-group inputFloat">
+          <span className="p-float-label">
+            <InputText id="apellido" name="apellido" />
+            <label htmlFor="apellido">Apellido*</label>
+          </span>
+        </div>
+      </div>
+      <div className="form-group">
+        <span className="p-float-label">
+          <InputText id="correo" name="correo" />
+          <label htmlFor="correo">Correo*</label>
+        </span>
+      </div>
+      <div className="form-group">
+        <fieldset legend="Mensaje*" className="messageBox">
+          <textarea name="mensaje" id="mensaje"></textarea>
+        </fieldset>
+      </div>
+      <div className="form-group">
+        <input type="hidden" name="form-name" value="formContact" />
+      </div>
+      <div className="form-group">
+        <p className="hidden">
+          <label>
+            No llenes este campo si eres humano:
+            <input name="bot-field" />
+          </label>
+        </p>
+      </div>
+      <div className="form-group">
+        <input type="submit" value="Enviar mensaje" className="btnEnviar" />
+      </div>
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
