@@ -9,7 +9,7 @@ export default function Contact() {
     <>
       <Navbar />
       <div className="contenedor_principal">
-        <div className="div1 flex">
+        <div className="div1">
           <Contacto
             title="Tamaños y precios"
             content="Te dejo los tres tamaños mas comunes para realizar un retrato. El precio se 
@@ -24,7 +24,7 @@ export default function Contact() {
             100% contenta."
           />
         </div>
-        <div className="div2 flex">
+        <div className="div2">
           <Contacto
             title="Asegura tu reserva"
             content="Primero debemos asegurarnos de que
@@ -43,9 +43,9 @@ export default function Contact() {
       </div>
 
       <div className="container-form">
-        <img src={splash} alt="" />
+        <img src={splash} alt="" className="image-splash" />
         <div className="form">
-            <h1></h1>
+          <h1></h1>
         </div>
       </div>
 
