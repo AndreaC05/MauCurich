@@ -179,7 +179,7 @@
 .custom-sidebar {
   position: relative;
   width: 610px;
-  background-color: rgba(0, 0, 0, 0.50);
+  background-color: rgba(0, 0, 0, 0.5);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%);
 }
 
@@ -226,16 +226,25 @@
   margin-left: 20px;
 }
 
+@media screen and (max-width: 1366px) {
+  .container-image .header ul li a {
+    font-size: 24px;
+  }
+  .shop {
+    font-size: 22px;
+  }
+  .title-banner p span {
+    font-size: 58px;
+  }
+  .social_icons {
+    margin-top: -14px;
+  }
+}
+
 @media screen and (max-width: 1250px) {
   .title-banner {
     bottom: 50px;
     left: 50px;
-  }
-  .title-banner p span {
-    font-size: 80px;
-  }
-  .title-banner p {
-    margin-bottom: 15px;
   }
 }
 
@@ -253,15 +262,21 @@
 }
 
 @media screen and (max-width: 768px) {
-  .title-banner p span {
-    font-size: 50px;
-  }
-  .title-banner p {
-    margin-bottom: 30px;
-  }
 }
 
 @media screen and (max-width: 560px) {
+  .title-banner p span {
+    font-size: 45px;
+  }
+  .social_icons img {
+    width: 25px;
+  }
+  .social_icons {
+    margin-top: -4px;
+  }
+}
+
+@media screen and (max-width: 492px) {
   .title-banner {
     display: none;
   }

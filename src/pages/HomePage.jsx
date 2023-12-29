@@ -37,25 +37,25 @@ export default function HomePage() {
         <div className="explorar">
           <h1>Explorar Trabajos</h1>
           <div className="images-t flex flex-column justify-content-center align-items-center">
-            <div className="flex flex-wrap justify-content-center align-items-center img1 mt-5">
-              <div>
+            <div className="flex justify-content-center align-items-center img1 mt-5">
+              <div  className="img-container text-center">
                 <Image src={bn4} alt="" preview />
               </div>
-              <div>
+              <div className="img-container text-center">
                 <Image src={c9} alt="" preview />
               </div>
-              <div>
+              <div className="img-container text-center">
                 <Image src={c2} alt="" preview />
               </div>
             </div>
-            <div className="flex flex-wrap justify-content-center align-items-center img2 mt-5">
-              <div>
+            <div className="flex justify-content-center align-items-center img2 mt-5">
+              <div className="img-container text-center">
                 <Image src={c5} alt="" preview />
               </div>
-              <div>
+              <div className="img-container text-center">
                 <Image src={c4} alt="" preview />
               </div>
-              <div>
+              <div className="img-container text-center">
                 <Image src={bn14} alt="" preview />
               </div>
             </div>

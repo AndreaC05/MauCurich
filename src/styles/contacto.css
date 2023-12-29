@@ -1,199 +1,230 @@
 .div-principal {
-    width: 800px;
-    margin-top: 85px;
+  width: 800px;
+  margin-top: 85px;
 }
 
-.div1, .div2{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.div1,
+.div2 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .p-divider-horizontal {
-    width: 800px;
-    background: #E7AD69;
-    height: 1px;
-    border: none;
+  width: 800px;
+  background: #e7ad69;
+  height: 1px;
+  border: none;
 }
 
 .tit-div {
-    font-size: 32px;
-    color: #FF8B03;
-    font-weight: 400;
-    margin-left: 30px;
-    margin-bottom: 17px;
-    width: 310px;
+  font-size: 32px;
+  color: #ff8b03;
+  font-weight: 400;
+  margin-left: 30px;
+  margin-bottom: 17px;
+  width: 310px;
 }
 
 .text-div {
-    font-size: 30px;
-    color: #6C6C6C;
-    font-weight: 400;
-    text-align: justify;
-    margin-left: 60px;
-    margin-top: 35px;
-    margin-right: 25px;
+  font-size: 30px;
+  color: #6c6c6c;
+  font-weight: 400;
+  text-align: justify;
+  margin-left: 60px;
+  margin-top: 35px;
+  margin-right: 25px;
 }
 
 .arrow-down {
-    font-size: 38px;
-    font-weight: 400;
-    margin-left: 410px;
+  font-size: 38px;
+  font-weight: 400;
+  margin-left: 410px;
 }
 
 .arrow-down {
-    color: #FF8A00;
+  color: #ff8a00;
 }
 
 /* Formulario */
 
 .container-form {
-    text-align: center;
-    margin-top: 100px;
-    position: relative;
+  text-align: center;
+  margin-top: 100px;
+  position: relative;
 }
 
 .form {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .form input {
-    padding: 15px;
-    width: 100%;
-    border-bottom: 1px solid #6B6B6B;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-radius: 0px;
-    background-color: transparent;
-    margin-bottom: 20px;
-    font-size: 24px;
+  padding: 15px;
+  width: 100%;
+  border-bottom: 1px solid #6b6b6b;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+  background-color: transparent;
+  margin-bottom: 20px;
+  font-size: 24px;
 }
 
 .form input:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .form label {
-    font-size: 20px;
-    margin-top: -0.6rem;
+  font-size: 20px;
+  margin-top: -0.6rem;
 }
 
 .form .form-group {
-    margin: 10px 10px;
+  margin: 10px 10px;
 }
 
 .messageBox {
-    text-align: left;
-    background-color: transparent;
-    border: 1px solid #6B6B6B;
-    height: 300px;
-    margin-top: 40px;
-    position: relative;
+  text-align: left;
+  background-color: transparent;
+  border: 1px solid #6b6b6b;
+  height: 300px;
+  margin-top: 40px;
+  position: relative;
 }
 
 .messageBox textarea {
-    width: 100%;
-    resize: none;
-    border: none;
-    background-color: transparent;
-    height: 250px;
-    font-size: 24px;
-    padding: 10px;
-    /* border: 1px solid #000; */
+  width: 100%;
+  resize: none;
+  border: none;
+  background-color: transparent;
+  height: 250px;
+  font-size: 24px;
+  padding: 10px;
+  /* border: 1px solid #000; */
 }
 
 .messageBox textarea:focus {
-    outline: none;
+  outline: none;
 }
 
 .p-fieldset-legend {
-    background-color: transparent;
-    margin-left: 30px;
-    font-size: 24px;
-    border: none;
-    letter-spacing: 5px;
-    font-weight: 500;
-    color: #6B6B6B;
+  background-color: transparent;
+  margin-left: 30px;
+  font-size: 24px;
+  border: none;
+  letter-spacing: 5px;
+  font-weight: 500;
+  color: #6b6b6b;
 }
 
 .btnEnviar {
-    background: linear-gradient(180deg, #FF8B03 0%, #F8DF00 100%);
-    border: none !important;
-    width: 50% !important;
-    margin-bottom: 0 !important;
-    cursor: pointer;
+  background: linear-gradient(180deg, #ff8b03 0%, #f8df00 100%);
+  border: none !important;
+  width: 50% !important;
+  margin-bottom: 0 !important;
+  cursor: pointer;
 }
 
 .form-group:nth-child(4) {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
 }
 
 .p-toast-message {
-    padding: 10px;
+  padding: 10px;
 }
 
 .p-toast-message-text {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1590px) {
+  .container-principal {
+    width: 50%;
+  }
+  .div-principal {
+    width: 90%;
+    margin: 80px auto 0 auto;
+  }
+  .arrow-down {
     margin-left: 20px;
+  }
+  .text-div {
+    font-size: 20px;
+    line-height: 28px;
+    margin-left: 28px;
+    width: 80%;
+  }
+  .p-divider-horizontal {
+    width: 100%;
+  }
+  .tit-div {
+    margin-left: 28px;
+  }
 }
 
 @media screen and (max-width: 840px) {
-    .container-principal {
-        width: 80%;
-        margin: auto;
-    }
-    .div1, .div2 {
-        justify-content: flex-start !important;
-    }
-    .div-principal {
-        width: 100%;
-    }
-    .p-divider-horizontal, .tit-div {
-        width: 100%;
-    }
-    .arrow-down {
-        margin-left: 300px;
-    }
-    .image-splash {
-        width: 80%;
-    }
+  .container-principal {
+    width: 80%;
+    margin: auto;
+  }
+  .div1,
+  .div2 {
+    justify-content: flex-start !important;
+  }
+  .div-principal {
+    width: 100%;
+  }
+  .p-divider-horizontal,
+  .tit-div {
+    width: 100%;
+  }
+  .arrow-down {
+    margin-left: 300px;
+  }
+  .image-splash {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .arrow-down {
-        display: none !important;
-    }
-    .container-text {
-        text-align: center;
-        width: 100%;
-        margin: 8px 0;
-    }
+  .arrow-down {
+    display: none !important;
+  }
+  .container-text {
+    text-align: center;
+    width: 100%;
+    margin: 8px 0;
+  }
 
-    .container-text .tit-div {
-        margin: 0;
-    }
-    .text-div {
-        margin-left: 0;
-    }
-    .inputFloat {
-        width: 100%;
-    }
-    .form {
-        position: relative;
-    }
-    .image-splash {
-        display: none;
-    }
-    .btnEnviar {
-        width: 100% !important;
-    }
+  .container-text .tit-div {
+    margin: 0;
+  }
+  .text-div {
+    margin-left: 0;
+  }
+  .inputFloat {
+    width: 100%;
+  }
+  .form {
+    position: relative;
+  }
+  .image-splash {
+    display: none;
+  }
+  .btnEnviar {
+    width: 100% !important;
+  }
+  .text-div  {
+    width: 100%;
+  }
 }

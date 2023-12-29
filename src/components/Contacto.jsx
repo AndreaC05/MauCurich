@@ -6,7 +6,7 @@ const Contacto = ({ title, content }) => {
     <>
       <div className="container-principal">
         <div className="div-principal">
-          <div className="inline-flex align-items-center container-text">
+          <div className="flex justify-content-between align-items-center container-text">
             <b className="tit-div">{title}</b>
             <i className="pi pi-angle-down arrow-down"></i>
           </div>

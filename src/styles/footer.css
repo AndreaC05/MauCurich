@@ -11,6 +11,12 @@ footer p {
   -webkit-text-fill-color: transparent;
 }
 
+@media screen and (max-width: 1366px) {
+  .icons img {
+    width: 35px;
+  }
+}
+
 @media screen and (max-width: 620px) {
   footer {
     flex-direction: column;

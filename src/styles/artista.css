@@ -101,7 +101,6 @@
     position: relative;
     left: 0;
     top: 0;
-    right: 0;
   }
 }
 
@@ -141,6 +140,12 @@
   .container-collage-images-4 .img7,
   .container-collage-images-4 .img8 {
     margin: 20px 0;
+  }
+  .container-artista p:nth-child(1)  {
+    font-size: 35px;
+  }
+  .container-artista p:nth-child(2)  {
+    font-size: 26px;
   }
 }
 

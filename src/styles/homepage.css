@@ -45,17 +45,45 @@
     text-align: center;
 }
 
-.images-t .img1 img{
-    margin: 0px 30px;
+.img1 .p-image {
+    margin: 0 20px;
 }
 
-.images-t .img2 img {
-    margin: 0px 30px;
+.img2 .p-image {
+    margin: 0 20px;
 }
 
 .img img {
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
+}
+
+@media screen and (max-width: 1280px) {
+    .tex {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .explorar h1 {
+        font-size: 32px;
+    }
+    .img1 .p-image {
+        width: 60%;
+        margin: 0;
+    }
+
+    .img2 .p-image {
+        width: 60%;
+        margin: 0;
+    }
+
+    .img-container {
+        width: 100%;
+    }
+
+    .img1 .p-image img, .img2 .p-image img {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -67,25 +95,22 @@
         /* border: 1px solid #000; */
         margin: 20px 0 0 0;
     }
-    .images-t .img1, .images-t .img2 {
-        text-align: center;
-    }
-    .images-t .img1 img, .images-t .img2 img {
-        width: 80%;
-    }
-
     .img {
         text-align: center;
     }
-
     .img img {
         width: 80%;
+    }
+    .img1, .img2{
+        flex-wrap: wrap;
+    }
+    .img1 .p-image, .img2 .p-image {
+        margin: 10px 0;
     }
 }
 
 @media screen and (max-width: 460px) {
     .frase {
-        /* border: 1px solid #000; */
         text-align: center;
     }
     .explorar h1 {
